@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
+}
+
+h2{
+  padding-top: 40px;
+  text-align: center;
+  padding-bottom: 30px;
+  color: white;
+ font-size: 250%;
+}
+
+.bx-support{
+  position: absolute;
+  left: 30px;
+  top: 25px;
+  font-size: 30px; 
+  color:white;
+}
+
+p{
+  text-align: center;
+  padding-top: 5%;
+}
+
+nav{
+  background: #081b29;
+  height: 80 px;
+  width: 100%;
+}
+
+label.Supporto-tecnico{
+  color:white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a{
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+a:hover, a.active{
+  background: yellowgreen;
+  transition: .5s;
+}
+
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check{
+  display: none;
+}
+
+@media(max-width: 952px){
+  label.navigazione{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+
+@media(max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100hv;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover, a.active{
+    background: none;
+    color: yellowgreen;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+  nav ul {
+    position: fixed; /* Garantito comportamento di sovrapposizione */
+    width: 100%;
+    height: 100vh; /* Assicurato altezza corretta */
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+    z-index: 9999; /* Massimizzato per sovrapporre gli altri elementi */}
+}
+
+
+
+nav.dettagli1
+{
+  align-items:center;
+  padding-left: 25%;
+  padding-right: 25%;
+ background-color: #081b29; /* Colore di sfondo */
+   text-align: center;
+}
+
+.Faq1
+{
+  padding-top: 2px;
+ 
+}
+
+
+.d{
+    border: 2px solid rgb(13, 56, 184); /* Bordo colorato */
+    border-radius: 8px; /* Angoli arrotondati */
+    padding: 10px; /* Spazio interno */
+    background-color: white; /* Colore di sfondo */
+    cursor: pointer; /* Indicazione che è cliccabile */
+    margin-bottom: 10px; /* Spazio tra gli elementi */
+}
+
+summary {
+    font-weight: bold;
+    color: black;
+}
+
+
+.dettagli{
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+
+
+
+
